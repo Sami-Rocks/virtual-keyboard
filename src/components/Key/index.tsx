@@ -4,7 +4,7 @@ type KeyType = {
 
 function Key({figure}:KeyType){
     return(
-        <div className="rounded-md bg-white w-16 h-16 flex justify-center items-center" >
+        <div className="rounded-md dark:bg-black bg-white w-16 h-16 flex justify-center items-center text-white text-black" >
             {figure}
         </div>
     )
