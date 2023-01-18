@@ -25,9 +25,9 @@ function Key({ figure }: KeyType) {
   return (
     <div className={` 
       ${ (activeKey.toUpperCase()) === (figure) ? 'bg-accent text-white' : '' } 
-      ${ figure === ' ' ? 'w-[354px]' :'' } 
-      ${ figure === 'SHIFT' ? 'w-28' :'' } 
-      rounded-md dark:bg-black bg-white w-16 h-16 flex justify-center items-center dark:text-white text-black `}>
+      ${ figure === ' ' ? 'lg:w-[354px] md:w-80' :'' } 
+      ${ figure === 'SHIFT' ? 'lg:w-28 md:w-20' :'' } 
+      rounded-md dark:bg-black bg-white lg:w-16 lg:h-16 w-14 h-14 text-xs lg:text-lg flex justify-center items-center dark:text-white text-black `}>
       {figure}
     </div>
   );

@@ -38,7 +38,7 @@ function Keyboard() {
           <Key key={el} figure={el} />
         ))}
       </div>
-      <div className="mt-2 relative left-52" >
+      <div className="mt-2 relative left-[265px]" >
           <Key figure=" " />
       </div>
     </div>
