@@ -1,6 +1,9 @@
 import Key from "./../Key";
+import { useEffect, useState } from "react";
+
 
 function Keyboard() {
+
   const first_row = [
     "Q",
     "W",
@@ -16,7 +19,7 @@ function Keyboard() {
     "]",
   ];
   const second_row = ["A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'"];
-  const third_row = ["Z", "X", "C", "V", "B", "N", "M", "<", ">"];
+  const third_row = ["Z", "X", "C", "V", "B", "N", "M", ",", "."];
 
   return (
     <div className="w-fit h-fit dark:bg-dark_grey border-4 border-white dark:border-dark_grey rounded-lg p-4 bg-black bg-opacity-10">
