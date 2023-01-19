@@ -1,25 +1,8 @@
 import Key from "./../Key";
-import { useEffect, useState } from "react";
+import { first_row, second_row, third_row } from "../../utils/constants";
 
 
-function Keyboard() {
-
-  const first_row = [
-    "Q",
-    "W",
-    "E",
-    "R",
-    "T",
-    "Y",
-    "U",
-    "I",
-    "O",
-    "P",
-    "[",
-    "]",
-  ];
-  const second_row = ["A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'"];
-  const third_row = ["SHIFT","Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "SHIFT"];
+function KeyboardLayout() {
 
   return (
     <div className="w-fit h-fit dark:bg-dark_grey border-4 border-white dark:border-dark_grey rounded-lg p-4 bg-black bg-opacity-10">
@@ -34,8 +17,8 @@ function Keyboard() {
         ))}
       </div>
       <div className="flex gap-2 ">
-        {third_row.map((el: string) => (
-          <Key key={el} figure={el} />
+        {third_row.map((el: string, index:number) => (
+          <Key key={el+index} figure={el} />
         ))}
       </div>
       <div className="mt-2 relative left-[265px]" >
@@ -45,4 +28,4 @@ function Keyboard() {
   );
 }
 
-export default Keyboard;
+export default KeyboardLayout;

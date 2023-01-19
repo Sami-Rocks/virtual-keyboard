@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import useDarkToggle from "./hooks/useDarktoggle";
-import Keyboard from "./components/Keyboard";
+import KeyboardLayout from "./components/Keyboard";
 
 function App() {
   const [colorTheme, setColorTheme] = useDarkToggle();
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="h-screen w-full dark:bg-black bg-light_grey flex justify-center items-center">
-      <Keyboard />
+      <KeyboardLayout />
     </div>
   );
 }
