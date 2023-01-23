@@ -14,7 +14,6 @@ module.exports = {
         light_grey: "#F3EFE0",
         dark_grey: "#434242",
         red: "#F14A0E",
-        transparent: "rgba(7, 13, 43, 0.75)",
       },
       fontFamily: {
         sans: ["Raleway", "sans-serif"]
