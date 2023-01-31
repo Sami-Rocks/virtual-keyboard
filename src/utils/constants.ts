@@ -16,4 +16,5 @@ export const first_row = [
   export const third_row = ["SHIFT","Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "SHIFT"];
 
 
-  export const sample_text = "Lorem␣ipsum␣dolor␣sit␣amet␣consectetur␣adipisicing␣elit.␣Nemo␣repudiandae␣eaque␣ipsa␣sint␣maiores␣dolorem␣dignissimos␣aut␣voluptatem␣excepturi␣illo␣mollitia␣harum␣deleniti␣praesentium␣fugit␣ad␣error␣ut␣sit␣illum."
+  // export const sample_text = "Lorem␣ipsum␣dolor␣sit␣amet␣consectetur␣adipisicing␣elit␣Nemo␣repudiandae␣eaque␣ipsa␣sint␣maiores␣dolorem␣dignissimos␣aut␣voluptatem␣excepturi␣illo␣mollitia␣harum␣deleniti␣praesentium␣fugit␣ad␣error␣ut␣sit␣illum"
+  export const sample_text = "Lorem␣ipsum␣dolor␣sit␣amet␣consectetur␣adipisicing␣elit␣Nemo␣repudiandae␣eaque␣ipsa␣sint␣maiores␣dolorem␣dignissimos␣aut"
