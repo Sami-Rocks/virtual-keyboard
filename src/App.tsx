@@ -12,14 +12,17 @@ function App() {
 
   useEffect(()=>{
     if(start){
-      window.addEventListener('keypress',(event) => {
+      window.addEventListener('keydown',(event) => {
         setActiveKey(event.key)
+      })
+      window.addEventListener('keyup',(event) => {
+        setActiveKey('')
       })
     }
 
     return () => {
-      window.removeEventListener('keypress',()=>{setActiveKey('')})
-      // window.removeEventListener('keyup',()=>{setActiveKey('')})
+      window.removeEventListener('keydown',()=>{setActiveKey('')})
+      window.removeEventListener('keyup',()=>{setActiveKey('')})
     }
 },[start])
 

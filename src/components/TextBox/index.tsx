@@ -13,7 +13,6 @@ function TextBox( {typed, done}:any ){
             case 'Shift':
                 return null
             case ' ':
-                console.log('here')
                 return setTypedText(typedText.concat('␣'))
             default:
                 // return (typed === sample_text[typedText.length]) ? setTypedText(typedText.concat(typed)) : null
@@ -24,7 +23,6 @@ function TextBox( {typed, done}:any ){
     let splitted = typedText.split('')
     useEffect(()=>{
         if( typed !== undefined ) {
-            console.log(typed)
             handleTyped()
         }
 
@@ -47,7 +45,7 @@ useEffect(()=>{
             <div className=" absolute -top-10" >{"WPM: " +wpm}</div>
             <div  className="absolute top-0 w-[700px] h-fit text-2xl rounded-xl border-2 border-transparent p-5 opacity-70 flex flex-wrap z-10" >
                 {splitted.map((el:any, index:number)=>{
-                    return ((el === sample_text[index]) || el === ' ') ? <span className='text-accent'  >{el}</span> :  <span className='text-red'  >{sample_text[index]}</span>
+                    return ((el === sample_text[index]) || el === ' ') ? <span className='text-accent' key={el+index} >{el}</span> :  <span className='text-red' key={el+index} >{sample_text[index]}</span>
                 })}
                 {/* <textarea className="bg-transparent w-full h-full text-accent outline-none wrap" name="typed" id="" value={typedText} /> */}
             </div>
